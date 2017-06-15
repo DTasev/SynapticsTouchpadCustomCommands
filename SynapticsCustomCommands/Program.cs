@@ -33,8 +33,10 @@ namespace SynapticsCustomCommands
         static private void SynTP_Dev_OnPacket()
         {
             var result = device.LoadPacket(packet);
+
             SynFingerFlags fingerState;
             SynMultiFingerGestureFlags multiFingerGestureState = SynMultiFingerGestureFlags.SF_UnacquireAllGestures;
+
             // if (Enum.TryParse(packet.FingerState.ToString(), out fingerState))
             // {
             //     if (fingerState.HasFlag(SynFingerFlags.SF_FingerTap3))
@@ -42,10 +44,10 @@ namespace SynapticsCustomCommands
             //         Console.WriteLine($"You tapped with 3 fingers and moved");
             //     }
             // }
-
+            Console.WriteLine("FingerState: " + packet.FingerState + ", ExtendedState: " + packet.ExtendedState);
             //doFingerState(multiFingerGestureState);
             doExtendedState(multiFingerGestureState);
-            doExtendedState2(multiFingerGestureState);
+            //doExtendedState2(multiFingerGestureState);
         }
         static private void doFingerState(SynMultiFingerGestureFlags multiFingerGestureState)
         {
@@ -85,7 +87,7 @@ namespace SynapticsCustomCommands
         {
             if (Enum.TryParse(packet.ExtendedState2.ToString(), out multiFingerGestureState))
             {
-                if (multiFingerGestureState.HasFlag(SynMultiFingerGestureFlags.SF_ThreeFingerHorizontalFlick))
+                if (multiFingerGestureState.HasFlag(SynMultiFingerGestureFlags.SF_ThreeFingerHorizontalFlick | SynMultiFingerGestureFlags.SF_ThreeFingerFlick))
                 {
                     Console.WriteLine("From DoExtendedState2: A three finger horizontal flick has been detected");
                 }
@@ -127,10 +129,10 @@ namespace SynapticsCustomCommands
                 {
                     Console.WriteLine("From DoExtendedState: A four finger horizontal flick has been detected");
                 }
-                if (multiFingerGestureState.HasFlag(SynMultiFingerGestureFlags.SF_FourFingerScrolling))
-                {
-                    Console.WriteLine("From DoExtendedState: A four finger scrolling has been detected");
-                }
+                //if (multiFingerGestureState.HasFlag(SynMultiFingerGestureFlags.SF_FourFingerScrolling))
+                //{
+                //    Console.WriteLine("From DoExtendedState: A four finger scrolling has been detected");
+                //}
                 if (multiFingerGestureState.HasFlag(SynMultiFingerGestureFlags.SF_FourFingerTap))
                 {
                     Console.WriteLine("From DoExtendedState: A four finger tap has been detected");
