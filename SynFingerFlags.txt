@@ -1,0 +1,77 @@
+                // if (fingerState.HasFlag(SynFingerFlags.SF_FingerTap3))
+                // {
+                //     Console.WriteLine($"Tapped {counter++}");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerAllGest))
+                // {
+                //     Console.WriteLine("You did something");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerAll))
+                // {
+                //     Console.WriteLine("You did something else");
+                // }
+                // //else if (fingerState.HasFlag(SynFingerFlags.SF_FingerMotion))
+                // //{
+                // //    Console.WriteLine($"You're moving your finger {moveCounter++}");
+                // //}
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerAllTap))
+                // {
+                //     Console.WriteLine($"You're doing all taps {moveCounter++}");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerAuxGest))
+                // {
+                //     Console.WriteLine($"FingerAuxGest");
+
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerDrag))
+                // {
+                //     Console.WriteLine($"FingerDrag");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerDragLock))
+                // {
+                //     Console.WriteLine($"FingerDragLock");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerHeavy))
+                // {
+                //     Console.WriteLine($"FingerHeavy");
+                // }
+                // // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerMoving))
+                // // {
+                // // Console.WriteLine($"FingerMoving");
+                // // }
+                // // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerMotion))
+                // // {
+                // // Console.WriteLine($"FingerMotion");
+                // // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerPossTap))
+                // {
+                //     Console.WriteLine($"FingerPossTap");
+                // }
+                // // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerPresent))
+                // // {
+                // //     Console.WriteLine($"FingerPresent");
+                // // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerPress))
+                // {
+                //     Console.WriteLine($"FingerPress");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerPrimGest))
+                // {
+                //     Console.WriteLine($"FingerPrimGest");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerProx))
+                // {
+                //     Console.WriteLine($"FingerProx");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerSecGest))
+                // {
+                //     Console.WriteLine($"FingerSecGest");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerStylus))
+                // {
+                //     Console.WriteLine($"FingerStylus");
+                // }
+                // else if (fingerState.HasFlag(SynFingerFlags.SF_FingerTap2))
+                // {
+                //     Console.WriteLine($"FingerTap2");
+                // }
